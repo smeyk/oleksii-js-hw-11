@@ -18,7 +18,12 @@
 		"url": "https://github.com/smeyk/oleksii-js-hw-11/issues"
 	},
 	"dependencies": {
-		"modern-normalize": "^1.1.0"
+		"axios": "^1.6.0",
+		"buffer": "^6.0.3",
+		"modern-normalize": "^1.1.0",
+		"normalize.css": "^8.0.1",
+		"notiflix": "^3.2.6",
+		"simplelightbox": "^2.14.2"
 	},
 	"devDependencies": {
 		"@parcel/transformer-sass": "^2.6.0",
