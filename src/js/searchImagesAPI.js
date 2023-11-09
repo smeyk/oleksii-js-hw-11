@@ -31,10 +31,7 @@ export default class SearchImagesAPI {
 	resetPage() {
 		this.page = 1;
 	}
-	get changeSearchName() {
-		return this.searchName;
-	}
-	set changeSearchName(name) {
+	changeSearchName(name) {
 		this.searchName = name;
 	}
 }

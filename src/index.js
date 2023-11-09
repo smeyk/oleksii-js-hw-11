@@ -32,7 +32,7 @@ const onFormSubmit = (event) => {
 	if (request === "") {
 		return Notify.failure("❌ Sorry, but you entered nothig. Please try again.");
 	}
-	api.changeSearchName = request;
+	api.changeSearchName(request)
 	api.resetPage()
 	gallery.innerHTML = "";
 	api.getImages()
@@ -45,11 +45,10 @@ const onFormSubmit = (event) => {
 		})
 		.catch(() => {
 			Notify.failure("❌ Sorry, there are no images matching your search query. Please try again.");
+			loadMoreBtn.style.display = "none"
 		})
 }
 
-
-let count = 0;
 const onClickLoadMore = (event) => {
 	event.preventDefault();
 	api.getImages()
